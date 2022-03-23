@@ -20,6 +20,7 @@ Ghost::Ghost(float x, float y, float maxSpeed, float maxForce, int color, Maze* 
 	addComponent(new SpriteComponent("Images/enemy.png"));
 
 	setCollider(new AABBCollider(Maze::TILE_SIZE, Maze::TILE_SIZE, this));
+	setMaxForce(1.0f);
 }
 
 Ghost::~Ghost()
